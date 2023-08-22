@@ -24,3 +24,13 @@ div input {
   border: 1px solid rgb(49, 221, 49);
   padding: 10px;
 }
+.btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: rgb(49, 221, 49);
+}
