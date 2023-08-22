@@ -15,3 +15,12 @@ div input {
   border-radius: 5px;
   border: none;
 }
+.all-user {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+.user {
+  border: 1px solid rgb(49, 221, 49);
+  padding: 10px;
+}
