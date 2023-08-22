@@ -1,6 +1,8 @@
 /* eslint-disable react/prop-types */
 
-const User = ({user, handleDelete, handleUpdate}) => {
+import { Link } from "react-router-dom";
+
+const User = ({user, handleDelete}) => {
     
     return (
         <div className="user">
@@ -8,7 +10,7 @@ const User = ({user, handleDelete, handleUpdate}) => {
             <p>{user.email}</p>
             <div className="btn">
                 <button onClick={() => handleDelete(user._id)}>Delete</button>
-                <button onClick={handleUpdate}>Update</button>
+                <Link to={`/update/${user._id}`}><button>Update</button></Link>
             </div>
         </div>
     );
